@@ -1,0 +1,29 @@
+        .s1 {
+            list-style-type: none;
+            list-style-image: url("/img/icon1.png");
+            background-color: burlywood;
+            list-style-position: inside;
+            border-style: ridge dotted dotted ridge;
+            border-width: 8px;
+            border-radius: 0px 20px 0px 20px;
+
+        }
+
+        .s1-o {
+            list-style-type: none;
+            list-style-image: url("/img/icon1.png");
+            background-color: burlywood;
+            list-style-position: outside;
+        }
+
+        .img1 {
+            float: left
+        }
+
+        .img2 {
+            float: right
+        }
+
+        .features {
+            clear: both
+        }

@@ -1,0 +1,52 @@
+        .st1 {
+            color: #39c5bb;
+            font-size: 128px;
+        }
+
+        .st-anon {
+            color: #FF8899;
+        }
+
+        .st-tomorin {
+            color: #77bbdd;
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .st-rana {
+            color: #77DD77
+        }
+
+        #AnonTokyo {
+            color: #FF8899;
+            font-family: "標楷體"
+        }
+
+        /* h3 {
+            color: aqua
+        } */
+
+        .container-mygo h1 {
+            color: #3388BB;
+            font-size: 300%;
+        }
+
+        .container-mygo h2 {
+            color: #ff9100;
+            font-size: 280%;
+        }
+
+        .container-mygo h3 {
+            color: #3388BB;
+            font-size: 260%;
+        }
+
+        .container-mygo h4 {
+            color: #ff9100;
+            font-size: 220%;
+        }
+
+        .container-mygo h5 {
+            color: #3388BB;
+            font-size: 200%;
+        }
