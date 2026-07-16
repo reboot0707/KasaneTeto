@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -30,12 +33,14 @@
             /* color: rgb(140, 0, 255); */
             color: rgb(22, 4, 85);
             background-color: #FFDD88;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Noto Sans TC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .thisspanchi p {
             background-color: #FF8899;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .thish2 {
@@ -58,13 +63,25 @@
         .thisimg {
             max-width: 50vw;
         }
+
+        .noto-sans-tc-normal {
+            font-family: "Noto Sans TC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
     <title>羅永線</title>
 </head>
 
 <body>
-    <div class="thisdiv">
-        <h2 class="thish2">羅永線</h2>
+    <article class="thisdiv">
+        <header>
+            <hgroup>
+                <h2 class="thish2">羅永線</h2>
+                <p>MyGO!!!!! 3rd Album「致並跡」</p>
+            </hgroup>
+        </header>
         <figure class="thisfig">
             <img class="thisimg" src=".\pics\mygo3rdalbum.webp" alt="致並跡" title="致並跡">
             <figcaption>MyGO!!!!! 3rd Album「致並跡」</figcaption>
@@ -167,7 +184,7 @@
         <p>La la la la la la</p>
 
 
-    </div>
+    </article>
 </body>
 
 </html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .allarea {
+            vertical-align: top;
+            width: 40%;
+            text-align: left;
+            margin: 0 auto;
+            /* border-style: solid;
+            border-color: black;
+            border-width: 2px; */
+
+        }
+
+        .st-id {
+            margin-bottom: 8px;
+            padding: 6px;
+            /* border-bottom-style: solid;
+            border-bottom-color: black;
+            border-bottom-width: 2px; */
+            width: 80%;
+            text-align: left;
+            /* resize: none */
+        }
+
+        .st-id textarea {
+            resize: none
+        }
+
+        .st-btn {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .checkbx {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            margin-left: 100px
+        }
+    </style>
+</head>
+
+<body>
+    <form class="allarea" action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>legend1</legend>
+            <div class="st-id">
+                <label for="ID">ID: </label><input type="text" id="account" name="account" placeholder="Administrator"
+                    required autocomplete="false">
+            </div>
+            <div class="st-id">
+                <label for="pwd">
+                    Password:
+                </label>
+                <input type="password" id="pwd" name="pwd" maxlength="12" required>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>legend2</legend>
+            <div class="st-id">
+                <label for="Comment">
+                    Comment:
+                </label>
+                <textarea type="text" name="Comment" id="Comment" autofocus></textarea>
+            </div>
+            <div class="btn">
+                <label><input type="radio" name="gender" id="male">男</label>
+                <label><input type="radio" name="gender" id="female" checked>女</label>
+                <label><input type="radio" name="gender" id="other">其他</label>
+            </div>
+            <div class="checkbx">
+                <label><input type="checkbox" name="option" id="a" value="a">甲</label>
+                <label><input type="checkbox" name="option" id="b" value="b">乙</label>
+                <label><input type="checkbox" name="option" id="c" value="c">丙</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>legend3</legend>
+            <div class="st-btn">
+                <label>
+                    縣市：
+                    <select name="LivingIn" multiple>
+                        <option value="TPE">台北市</option>
+                        <option value="NTPC">新北市</option>
+                        <option value="TYU">桃園市</option>
+                        <option value="KLC">基隆市</option>
+                        <option value="HSC">新竹市</option>
+                        <option value="HCC">新竹縣</option>
+                        <option value="MIA">苗栗縣</option>
+                        <option value="TXG">台中市</option>
+                        <option value="CHA">彰化縣</option>
+                        <option value="NAN">南投縣</option>
+                        <option value="YUN">雲林縣</option>
+                        <option value="CYI">嘉義市</option>
+                        <option value="CYQ">嘉義縣</option>
+                        <option value="TNN">台南市</option>
+                        <option value="KHH">高雄市</option>
+                        <option value="PIF">屏東縣</option>
+                        <option value="ILA">宜蘭縣</option>
+                        <option value="HUA">花蓮縣</option>
+                        <option value="TTT">台東縣</option>
+                        <option value="PEN">澎湖縣</option>
+                        <option value="KIN">金門縣</option>
+                        <option value="LIE">連江縣</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="file" name="file1" accept="image/*" value="test">
+                </label>
+            </div>
+            <div>
+                <input type="date" name="birth" id="" value="2000-01-01">
+            </div>
+            <div>
+                <input type="url" name="url" id="" value="https://www.ptt.cc" readonly>
+            </div>
+            <div>
+                <label>身分證字號:</label>
+                <input type="text" name="twid" pattern="[a-zA-Z][12]\d{8}">
+            </div>
+            <div>
+                <label>喜歡的冰淇淋口味:</label>
+                <input type="text" name="icfavor" list="favorlist" id="myicfavor">
+                <datalist id="favorlist">
+                    <option value="薄荷巧克力">Choco Mint</option>
+                    <option value="草莓">Strawberry</option>
+                    <option value="巧酥口味">Cookie & Cream</option>
+                </datalist>
+            </div>
+            <div class="st-btn">
+                <input type="submit" for="#" class="MyLabel" value="送出" name="send">
+                <input type="reset" class="MyLabel" value="重設" name="reset">
+            </div>
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>search</legend>
+        <div class="abc">
+            <form action="https://www.google.com/search" method="get">
+                <label for="search-query">testsearch</label>
+                <input type="search" name="q">
+                <input type="submit" value="search">
+            </form>
+        </div>
+    </fieldset>
+</body>
+
+</html>
