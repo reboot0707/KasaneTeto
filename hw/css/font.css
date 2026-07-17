@@ -1,0 +1,16 @@
+        .noto-sans-tc-normal {
+            font-family: "Noto Sans TC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: font-jof;
+            src: url(../fonts/JustOldFashion.ttf);
+        }
+
+        @font-face {
+            font-family: font-scriptin;
+            src: url(../fonts/SCRIPTIN.ttf);
+        }
